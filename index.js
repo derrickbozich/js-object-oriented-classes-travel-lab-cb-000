@@ -14,7 +14,7 @@ class Driver {
 class Route {
   constructor(beginningLocation, endingLocation){
     const start = beginningLocation.split(" ")
-    this.beginningLocation = {horizontal:  }
+    this.beginningLocation = {horizontal: start[0], vertical = start[1]}
   }
   let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 }
