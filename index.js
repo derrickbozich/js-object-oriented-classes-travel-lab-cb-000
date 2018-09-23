@@ -46,12 +46,11 @@ class Route {
 
   }
 
-  estimatedTime(peak){
-   if(peak){
-     return this.blocksTravelled()/2
-   } else {
-     return this.blocksTravelled()/3
-   }
+  estimatedTime(peakHours){
+    let totalBlocks = this.blocksTravelled();
+    debugger
+    let result = peakHours ? totalBlocks / 2 : totalBlocks / 3;
+    return result
   }
 
 
