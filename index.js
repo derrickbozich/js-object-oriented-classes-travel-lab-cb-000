@@ -26,7 +26,7 @@ class Route {
     if (this.endingLocation.vertical - this.beginningLocation.vertical > 0){
       vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
     } else {
-      vertical = this.beginningLocation.vertical - this.endingLocation.vertical 
+      vertical = this.beginningLocation.vertical - this.endingLocation.vertical ;
     }
   }
 
