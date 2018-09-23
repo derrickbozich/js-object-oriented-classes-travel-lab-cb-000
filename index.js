@@ -30,7 +30,7 @@ class Route {
       vertical = this.beginningLocation.vertical - this.endingLocation.vertical ;
     }
 
-    if (indexOf(eastWest[this.endingLocation.horizontal])) {
+    if (eastWest.indexOf(this.endingLocation.horizontal)) {
 
     } else {
 
