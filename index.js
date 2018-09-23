@@ -34,6 +34,4 @@ class Route {
     let result = peakHours ? totalBlocks / 2 : totalBlocks / 3;
     return result
   }
-
-
 }
