@@ -30,19 +30,15 @@ class Route {
     let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal);
     let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal);
 
-    if (endingNorthSouth - beginningNorthSouth > 0){
-      vertical = endingNorthSouth - beginningNorthSouth;
-    } else {
-      vertical = beginningNorthSouth - endingNorthSouth ;
-    }
 
-    if (endingEastWest - beginningEastWest > 0){
-      horizontal = endingEastWest - beginningEastWest;
-    } else {
-      horizontal = beginningEastWest - endingEastWest ;
-    }
+    vertical = endingNorthSouth - beginningNorthSouth;
 
-    return vertical + horizontal;
+
+
+    horizontal = endingEastWest - beginningEastWest;
+
+
+    return Math.abs(vertical) + Math.abs(horizontal);
 
   }
 
