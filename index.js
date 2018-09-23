@@ -1,6 +1,6 @@
 class Driver {
   constructor(name, startDate){
     this.name = name;
-    this.startDate = Date.getDate();
+    this.startDate = Date.now();
   }
 }
