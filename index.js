@@ -29,7 +29,7 @@ class Route {
     let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal);
 
 
-    vertical = this.endingLocation.vertical; - this.beginningLocation.vertical;
+    vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
 
 
 
