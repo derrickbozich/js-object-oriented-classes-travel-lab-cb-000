@@ -42,6 +42,7 @@ class Route {
       horizontal = beginningEastWest - endingEastWest ;
     }
 
+    return vertical + horizontal;
 
   }
 
