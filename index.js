@@ -36,11 +36,12 @@ class Route {
       vertical = beginningNorthSouth - endingNorthSouth ;
     }
 
-    if () {
-
+    if (endingEastWest - beginningEastWest > 0){
+      horizontal = endingEastWest - beginningEastWest;
     } else {
-
+      horizontal = beginningEastWest - endingEastWest ;
     }
+
 
   }
 
