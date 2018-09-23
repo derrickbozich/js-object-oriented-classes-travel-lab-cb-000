@@ -23,8 +23,11 @@ class Route {
   blocksTravelled(){
     let vertical;
     let horizontal;
+
     let beginningNorthSouth = this.beginningLocation.vertical;
     let endingNorthSouth = this.endingLocation.vertical;
+
+    let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal)
 
     if (endingNorthSouth - beginningNorthSouth > 0){
       vertical = endingNorthSouth - beginningNorthSouth;
@@ -32,7 +35,7 @@ class Route {
       vertical = beginningNorthSouth - endingNorthSouth ;
     }
 
-    if (eastWest.indexOf(this.endingLocation.horizontal)) {
+    if () {
 
     } else {
 
