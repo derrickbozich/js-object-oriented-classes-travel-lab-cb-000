@@ -48,7 +48,6 @@ class Route {
 
   estimatedTime(peakHours){
     let totalBlocks = this.blocksTravelled();
-    debugger
     let result = peakHours ? totalBlocks / 2 : totalBlocks / 3;
     return result
   }
