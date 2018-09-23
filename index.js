@@ -48,7 +48,7 @@ class Route {
 
   estimatedTime(peakHours){
     let totalBlocks = blocksTravelled();
-    peakHours ?
+    peakHours ? totalBlocks / 2 : totalBlocks / 3;
   }
 
 
