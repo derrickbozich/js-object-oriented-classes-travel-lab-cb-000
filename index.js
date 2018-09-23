@@ -24,17 +24,9 @@ class Route {
     let vertical;
     let horizontal;
 
-
-    let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal);
-    let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal);
-
-
     vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
 
-
-
-    horizontal = endingEastWest - beginningEastWest;
-
+    horizontal = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
 
     return Math.abs(vertical) + Math.abs(horizontal);
 
