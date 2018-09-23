@@ -16,5 +16,6 @@ class Route {
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
-  let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
+  let eastWest = ['1st Avenue','2nd Avenue', '3rd Avenue', 
+  'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
 }
