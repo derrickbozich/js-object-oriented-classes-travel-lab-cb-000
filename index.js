@@ -11,40 +11,40 @@ class Driver {
   }
 }
 
-// class Route {
-//   constructor(beginningLocation, endingLocation){
-//     this.beginningLocation = beginningLocation;
-//     this.endingLocation = endingLocation;
-//   }
-//
-//   let eastWest = ['1st Avenue','2nd Avenue', '3rd Avenue',
-//   'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
-//
-//   blocksTravelled(){
-//     let vertical;
-//     let horizontal;
-//
-//     let beginningNorthSouth = this.beginningLocation.vertical;
-//     let endingNorthSouth = this.endingLocation.vertical;
-//
-//     let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal) + 1;
-//     let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal) + 1;
-//
-//     if (endingNorthSouth - beginningNorthSouth > 0){
-//       vertical = endingNorthSouth - beginningNorthSouth;
-//     } else {
-//       vertical = beginningNorthSouth - endingNorthSouth ;
-//     }
-//
-//     if (endingEastWest - beginningEastWest > 0){
-//       horizontal = endingEastWest - beginningEastWest;
-//     } else {
-//       horizontal = beginningEastWest - endingEastWest ;
-//     }
-//
-//     return vertical + horizontal;
-//
-//   }
-//
-// 
-// }
+class Route {
+  constructor(beginningLocation, endingLocation){
+    this.beginningLocation = beginningLocation;
+    this.endingLocation = endingLocation;
+  }
+
+  let eastWest = ['1st Avenue','2nd Avenue', '3rd Avenue',
+  'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
+
+  blocksTravelled(){
+    let vertical;
+    let horizontal;
+
+    let beginningNorthSouth = this.beginningLocation.vertical;
+    let endingNorthSouth = this.endingLocation.vertical;
+
+    let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal) + 1;
+    let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal) + 1;
+
+    if (endingNorthSouth - beginningNorthSouth > 0){
+      vertical = endingNorthSouth - beginningNorthSouth;
+    } else {
+      vertical = beginningNorthSouth - endingNorthSouth ;
+    }
+
+    if (endingEastWest - beginningEastWest > 0){
+      horizontal = endingEastWest - beginningEastWest;
+    } else {
+      horizontal = beginningEastWest - endingEastWest ;
+    }
+
+    return vertical + horizontal;
+
+  }
+
+
+}
