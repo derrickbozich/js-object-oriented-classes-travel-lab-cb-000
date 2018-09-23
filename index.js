@@ -24,14 +24,14 @@ class Route {
     let vertical;
     let horizontal;
 
-    let beginningNorthSouth = this.beginningLocation.vertical;
-    let endingNorthSouth = this.endingLocation.vertical;
+    let beginningNorthSouth =
+    let endingNorthSouth =
 
     let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal);
     let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal);
 
 
-    vertical = endingNorthSouth - beginningNorthSouth;
+    vertical = this.endingLocation.vertical; - this.beginningLocation.vertical;
 
 
 
