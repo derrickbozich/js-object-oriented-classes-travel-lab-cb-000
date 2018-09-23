@@ -28,7 +28,7 @@ class Route {
     let endingNorthSouth = this.endingLocation.vertical;
 
     let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal) + 1;
-    let endingEastWest = eastWest.indexOf(this.beginningLocation.horizontal) + 1;
+    let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal) + 1;
 
     if (endingNorthSouth - beginningNorthSouth > 0){
       vertical = endingNorthSouth - beginningNorthSouth;
