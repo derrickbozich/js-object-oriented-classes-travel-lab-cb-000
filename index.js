@@ -23,7 +23,7 @@ class Route {
   blocksTravelled(){
     let vertical;
     let horizontal;
-    if (this.beginningLocation.vertical - this.beginningLocation.vertical
+    if (this.beginningLocation.vertical - this.endingLocation.vertical
   }
 
 
