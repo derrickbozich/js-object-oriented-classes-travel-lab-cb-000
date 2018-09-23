@@ -24,8 +24,6 @@ class Route {
     let vertical;
     let horizontal;
 
-    let beginningNorthSouth =
-    let endingNorthSouth =
 
     let beginningEastWest = eastWest.indexOf(this.beginningLocation.horizontal);
     let endingEastWest = eastWest.indexOf(this.endingLocation.horizontal);
