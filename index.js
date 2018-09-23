@@ -23,11 +23,13 @@ class Route {
   blocksTravelled(){
     let vertical;
     let horizontal;
+    let beginningNorthSouth = this.beginningLocation.vertical;
+    let endingNorthSouth = this.endingLocation.vertical;
 
-    if (this.endingLocation.vertical - this.beginningLocation.vertical > 0){
-      vertical = this.endingLocation.vertical - this.beginningLocation.vertical;
+    if (endingNorthSouth - beginningNorthSouth > 0){
+      vertical = endingNorthSouth - beginningNorthSouth;
     } else {
-      vertical = this.beginningLocation.vertical - this.endingLocation.vertical ;
+      vertical = beginningNorthSouth - endingNorthSouth ;
     }
 
     if (eastWest.indexOf(this.endingLocation.horizontal)) {
